@@ -30,6 +30,21 @@ namespace Assignment_03
             Console.WriteLine("==============");
 
             #endregion
+
+            #region Q3.simple arithematic
+            Console.Write("Enter a decimal number: ");
+            float n1 = float.Parse(Console.ReadLine());
+            Console.Write("Enter another decimal number: ");
+            float n2 = float.Parse(Console.ReadLine());
+            float sum = n1 + n2;
+            float sub = n1 - n2;
+            float multiply = n1 * n2;
+            float divide = n1 / n2;
+            float rem = n1 % n2;
+
+            Console.WriteLine($"Sum: {sum}\nSubtraction: {sub}\nMultiplication: {multiply}\nDivision: {divide}\nRemainder: {rem}");
+          
+            #endregion
         }
     }
 }
