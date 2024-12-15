@@ -1,4 +1,6 @@
-﻿namespace Assignment_03
+﻿using System.Text;
+
+namespace Assignment_03
 {
     internal class Program
     {
@@ -14,7 +16,18 @@
             } while (!flag);
             Console.WriteLine(x);
             #endregion
+
             #region Q2.convert into string
+            Console.WriteLine("Enter a word : ");
+            string word=Console.ReadLine();
+            StringBuilder sb= new StringBuilder();
+            foreach(char c in word ) {
+                if(char.IsDigit(c)) 
+                    sb.Append(c);
+            }
+            long num=long.Parse(sb.ToString());
+            Console.WriteLine(num);
+            Console.WriteLine("==============");
 
             #endregion
         }
