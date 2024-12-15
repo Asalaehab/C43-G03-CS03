@@ -19,13 +19,14 @@ namespace Assignment_03
 
             #region Q2.convert into string
             Console.WriteLine("Enter a word : ");
-            string word=Console.ReadLine();
-            StringBuilder sb= new StringBuilder();
-            foreach(char c in word ) {
-                if(char.IsDigit(c)) 
+            string word = Console.ReadLine();
+            StringBuilder sb = new StringBuilder();
+            foreach (char c in word)
+            {
+                if (char.IsDigit(c))
                     sb.Append(c);
             }
-            long num=long.Parse(sb.ToString());
+            long num = long.Parse(sb.ToString());
             Console.WriteLine(num);
             Console.WriteLine("==============");
 
@@ -48,7 +49,7 @@ namespace Assignment_03
 
             #region Q4.Extract a substring from a given string
             string str = "Route Acadamy";
-            string substring=str.Substring(0, 5);
+            string substring = str.Substring(0, 5);
             Console.WriteLine(substring);
             #endregion
 
@@ -61,8 +62,25 @@ namespace Assignment_03
             #endregion
 
             #region Q6.Assigning one reference type variable to another and modifying 
-
+            Point p1;
+            Point p2;
+            p1 = new Point();
+            p1.x = 10; p1.y = 20;
+            p2 = new Point();
+            p2 = p1;
+            p1.x = 25;
+            Console.WriteLine(p2.x);
             #endregion
+
+            #region Q7.take two string variables and print them as one variable
+            Console.WriteLine("Enter first Word : ");
+            string w1 = Console.ReadLine();
+            Console.WriteLine("Enter second Word : ");
+            string w2 = Console.ReadLine();
+            string full_word = w1 + w2;
+            Console.WriteLine(full_word);
+            #endregion
+
         }
     }
 }
