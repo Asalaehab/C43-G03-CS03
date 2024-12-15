@@ -43,7 +43,25 @@ namespace Assignment_03
             float rem = n1 % n2;
 
             Console.WriteLine($"Sum: {sum}\nSubtraction: {sub}\nMultiplication: {multiply}\nDivision: {divide}\nRemainder: {rem}");
-          
+            Console.WriteLine("============================================");
+            #endregion
+
+            #region Q4.Extract a substring from a given string
+            string str = "Route Acadamy";
+            string substring=str.Substring(0, 5);
+            Console.WriteLine(substring);
+            #endregion
+
+            #region Q5. Assigning one value type variable to another and modifying the value 
+            int nn1 = 5;
+            int nn2 = nn1;
+            nn1++;
+            Console.WriteLine(nn1);
+            Console.WriteLine(nn2);
+            #endregion
+
+            #region Q6.Assigning one reference type variable to another and modifying 
+
             #endregion
         }
     }
