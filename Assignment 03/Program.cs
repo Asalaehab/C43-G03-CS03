@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 
 namespace Assignment_03
 {
@@ -80,6 +81,35 @@ namespace Assignment_03
             string full_word = w1 + w2;
             Console.WriteLine(full_word);
             #endregion
+            #region Q8.that calculates the simple interest given the principal amount
+            Console.Write("Enter the principle :  ");
+            int principal = int.Parse(Console.ReadLine());
+            Console.Write("Enter the rate :  ");
+            int rate = int.Parse(Console.ReadLine());
+            Console.Write("Enter the time : ");
+            int time = int.Parse(Console.ReadLine());
+            int interest = principal * rate * time;
+            Console.Write($"the interest is : {interest}");
+            #endregion
+
+            #region Q9.calculates the Body Mass Index 
+            Console.Write("Enter the weight : ");
+            float w = float.Parse(Console.ReadLine());
+            Console.Write("Enter the height: ");
+            float h = float.Parse(Console.ReadLine());
+            float BMI = w / (h * h);
+            Console.WriteLine($"BMI = {BMI}");
+            Console.WriteLine("====================");
+            #endregion
+
+            #region Q10.ternary Operator
+            Console.Write("Enter the temparuture : ");
+            float temperature = float.Parse(Console.ReadLine());
+
+            String res = temperature < 10 ? "Just Cold" : (temperature > 30 ? "Just Hot" : "Just Good");
+            Console.WriteLine($"the temperature is :  {res}");
+            #endregion
+
 
         }
     }
